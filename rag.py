@@ -36,7 +36,7 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-
 #Store in FAISS vector database
 vectorstore = FAISS.from_documents(docs, embeddings)
 
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "your_api_key"
 
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
